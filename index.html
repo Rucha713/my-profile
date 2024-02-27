@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #resume{
+        color: orange;
+        font-weight: bolder;
+      }
+      .heading{
+        color: cadetblue;
+        font-style: italic;
+      }
+
+    </style>
   </head>
   <body>
     <!-- Header section -->
@@ -11,7 +22,7 @@
         <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
-          </svg> Rucha Rahul Tungatkar &nbsp;&nbsp; &nbsp;&nbsp;
+          </svg>Rucha Rahul Tungatkar  &nbsp;&nbsp; &nbsp;&nbsp;
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
             <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
             <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
@@ -19,26 +30,26 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
             <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
           </svg> Email: ruchatungatkar@gmail.com &nbsp;&nbsp; &nbsp;&nbsp;
-          <a href="assets/Rucha Tungatkar.pdf" Download><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
+          <a href="assets/Rucha Tungatkar.pdf" id="resume" Download><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down-fill" viewBox="0 0 16 16">
             <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
           </svg>Resume</a>
         </p>
 
     <!-- Navigation section -->
-    <nav>
-        <a href="#home">Home</a> &nbsp;&nbsp; &nbsp;&nbsp;
-        <a href="#techstack">Tech Stack</a> &nbsp;&nbsp; &nbsp;&nbsp;
-        <a href="#Projects">Projects</a> &nbsp;&nbsp; &nbsp;&nbsp;
-        <a href="#Eduction">Eduction</a> &nbsp;&nbsp; &nbsp;&nbsp;
-        <a href="PersonalDetals.html" target="_blank">Personal Details</a> &nbsp;&nbsp; &nbsp;&nbsp;
-        <a href="Others.html" target="_blank">Others</a>
+    <nav style="text-decoration: none;">
+        <a href="#home" class="anchor">Home</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="#techstack" class="anchor">Tech Stack</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="#Projects" class="anchor">Projects</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="#Eduction" class="anchor">Eduction</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="PersonalDetals.html" class="anchor" target="_blank">Personal Details</a> &nbsp;&nbsp; &nbsp;&nbsp;
+        <a href="Others.html" class="anchor" target="_blank">Others</a>
     </nav>
 
     <!-- Main section -->
     <!-- Home Section -->
     
     <section id="home">
-        <h2>Professional Summary &nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <h2 class="heading">Professional Summary &nbsp;&nbsp;&nbsp;&nbsp;</h2>
         <ul>
           <li>Having 1 years of experience in developing Single page Web Applications using Angular 8, HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
           <li>Experience on working with version control system - GIT and GitHub.</li>
@@ -55,7 +66,7 @@
 
       <!-- Technology Stack -->
       <section id="techstack">
-        <h2> My Technology Stack is</h2>
+        <h2 class="heading"> My Technology Stack is</h2>
         <table border="">
           <Thead>
             <Tr>
@@ -93,7 +104,7 @@
 
         <!-- PRojects -->
       <section id="Projects">
-        <h2>My Projects</h2>
+        <h2 class="heading">My Projects</h2>
 
         <p><strong>Name: <u>Student Management</u></strong></p>
 
