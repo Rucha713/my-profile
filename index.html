@@ -6,6 +6,10 @@
     <title>INDEX</title>
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       .resume{
         color: orange;
@@ -19,6 +23,7 @@
         font-style: italic;
         background-color: brown;
         padding: 20px;
+        font-family: "Roboto", sans-serif;
 
       }
       .icon{
@@ -47,9 +52,32 @@
       .nav{
         padding-right: 100px;
       }
-      th,td{
-        padding: 15px;
+      #listSummary li{
+        list-style-type: none;
       }
+      #listSummary li::marker{
+        content: "✍️";
+      }
+      .roles{
+        list-style-type: lower-alpha;
+      }
+      .roles li{
+        padding-top: 8px;
+      }
+      #eduTable{
+        width: 50%;
+
+      }
+      table,th,tr,td{
+        border: 2px solid rgb(216, 186, 131);
+        border-collapse: collapse;  
+      }
+      td,th{
+        padding: 10px;
+      }
+      #projectDesc::selection{
+      background-color: rgb(241, 193, 104);
+    }
       #span1{
         padding-right: 200px;
       }
@@ -73,7 +101,7 @@
         </header>
 
     <!-- Navigation section -->
-    <nav class="nav">
+    <nav class="nav heading">
         <a class="nav" href="#home" class="anchor">Home</a>
         <a class="nav" href="#techstack" class="anchor">Tech Stack</a> 
         <a class="nav" href="#Projects" class="anchor">Projects</a>
@@ -86,10 +114,10 @@
     <!-- Home Section -->
     
     <section id="home">
-      <h2 class="home">Carrer Objective</h2>
+      <h2 class="home" class="heading">Carrer Objective</h2>
       <p style="text-transform: uppercase;"> to work in organization where i can learn and grow my skill and help the organization growth</p>
-        <h2 class="home" >Professional Summary</h2>
-        <ul>
+        <h2 class="home" class="heading" >Professional Summary</h2>
+        <ul id="summlist">
           <li class="li">Having 1 years of experience in developing Single page Web Applications using <span id="Angular">Angular 8</span> , HTML5, CSS3, Bootstrap 5, JavaScript, TypeScript</li>
           <li class="li" id="li2">Experience on working with version control system - <span>GIT and GitHub </span>.</li>
           <li class="li">Experience working with JIRA for user stories and bug tracking.</li>
@@ -105,8 +133,8 @@
 
       <!-- Technology Stack -->
       <section id="techstack">
-        <h2 > My Technology Stack is</h2>
-        <table border="">
+        <h2 class="heading"> My Technology Stack is</h2>
+        <table id="eduTable" class="summlist">
           <Thead>
             <Tr>
               <Th>Sr.No</Th>
@@ -142,21 +170,21 @@
       <hr>
 
         <!-- PRojects -->
-      <section id="Projects">
-        <h2>My Projects</h2>
+      <section id="Projects" >
+        <h2 class="heading">My Projects</h2>
 
         <p><strong>Name: <u>Student Management</u></strong></p>
 
     <p> <u><strong>Environment :</strong></u> Angular 8, TypeScript, JavaScript (ES6), HTML5, CSS, Bootstrap, GitHub, Desktop GitHub, Agile and JIRA</p>
     
     <p><span id="span1"><strong>Team Size:</strong> 06 </span><strong>Duration: </strong><i>2021-1<sup>st</sup>-July till <u>present</u></i></p>
-    <p><strong>Project Description: </strong>This project is mainly used for student management in colleges, where It help to manage student record like <br>
+    <p class="projectDesc"><strong>Project Description: </strong>This project is mainly used for student management in colleges, where It help to manage student record like <br>
         student registration, student update and to see all the list of academic activities like score card and attendance.</p>
 
     <hr>
 
 <strong>Roles and Responsibilities:</strong>
-    <ul>
+    <ul class="roles">
         <li class="ul">Designed and implemented the user interface using HTML5 and CSS
         </li>
         <li class="li">Work closely with backend developers for code integration</li>
@@ -171,8 +199,8 @@
       <!-- Eduction  -->
 
       <section id="Eduction">
-          <h2>Eduction Details</h2>
-          <table border="2">
+          <h2 class="heading">Eduction Details</h2>
+          <table>
             <thead>
               <tr>
                 <th>Qualification</th>
